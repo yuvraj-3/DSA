@@ -41,3 +41,9 @@ int main() {
     cout << "GCD is: " << a << endl;
     return 0;
 }
+
+
+
+/* For LCM  
+lcm= a*b/gcd
+*/
