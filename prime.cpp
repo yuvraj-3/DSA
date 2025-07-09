@@ -1,23 +1,32 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 int main()
 {
     int n;
 
-    cout<<"emter number";
+    cout<<"emter number ";
     cin>>n;
     
-    bool isprime=1;
-    for (int i =2;i<n;i++)
+    
+    if (n <= 1) {
+        cout << "Not prime";
+
+        return 0; //return 0 will edn the program here
+    }
+    
+    bool isprime=true;
+
+    for (int i =2;i<sqrt(n);i++)
     {
-        if(n%2==0){
-            isprime=0;
+        if(n%i==0){
+            isprime=false;
             break;
         }
     }
 
-    if(isprime==1)
+    if(isprime)
     {
         cout<<"prime";
     }
