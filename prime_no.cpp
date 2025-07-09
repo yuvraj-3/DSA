@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int n;
+    cout<<"enter the number ";
     cin>>n;
     int i;
     bool prime=true;
@@ -20,4 +21,6 @@ int main()
         
     }
     cout<<prime;
+
+    return 0;
 }
