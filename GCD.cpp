@@ -10,12 +10,12 @@ int main(){
 
     int n1 =22;
     int n2=44;
-    int d,gcd=1;
+    int divisior,gcd=1;
 
     for (int i =1;i<=min(n1,n2);i++){
 
         if (n1%i==0 && n2%i==0){
-            d=i;
+            divisior=i;
             gcd=max(gcd,d);
         }
     }
